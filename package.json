@@ -1,0 +1,25 @@
+{
+  "name": "c3web",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.14",
+    "bootstrap": "^4.0.0-beta",
+    "express": "^4.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tazabekov/c3web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tazabekov/c3web/issues"
+  },
+  "homepage": "https://github.com/tazabekov/c3web#readme"
+}
