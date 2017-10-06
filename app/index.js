@@ -1,10 +1,16 @@
-import {BinaryCounter} from "../components/binary-counter/binary-counter.js";
+import { BinaryCounter } from "../components/binary-counter/binary-counter.js";
+import { CounterToggler } from "../components/counter-toggler/counter-toggler.js";
 
 const template = document.createElement('template');
 template.innerHTML = `
     <h1>C3 Demo app:</h1>
-    <binary-counter counter="2"></binary-counter>
-    <slot></slot>
+    <counter-toggler>
+        <binary-counter counter="2"></binary-counter>
+    </counter-toggler>
+    more binary togglers:
+    <counter-toggler>
+        <binary-counter counter="2"></binary-counter>
+    </counter-toggler>
   `;
 
 export class C3DemoApp extends HTMLElement {
