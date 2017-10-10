@@ -1,7 +1,4 @@
 import { C3App } from "../components/c3-app/c3-app.js";
-import { C3Sidebar } from "../components/c3-sidebar/c3-sidebar.js";
-import { BinaryCounter } from "../components/binary-counter/binary-counter.js";
-import { CounterToggler } from "../components/counter-toggler/counter-toggler.js";
 
 
 const template = document.createElement('template');
