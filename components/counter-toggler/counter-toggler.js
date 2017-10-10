@@ -18,8 +18,6 @@ export class CounterToggler extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
     connectedCallback() {
-        console.log("connectedCallback: CounterToggler");
-
         this.shadowRoot.querySelector('#up')
             .addEventListener('click', this._upClick.bind(this));
 
@@ -27,13 +25,13 @@ export class CounterToggler extends HTMLElement {
             .addEventListener('click', this._downClick.bind(this));
     }
 
-    _upClick(event) {
+    _upClick() {
         let bc = this.querySelector("binary-counter");
         let currentCounter = parseInt(bc.getAttribute("counter"));
         bc.setAttribute("counter", currentCounter+1);
     }
 
-    _downClick(event) {
+    _downClick() {
         let bc = this.shadowRoot.querySelector( 'slot' ).assignedNodes()[1];
         let currentCounter = parseInt(bc.getAttribute("counter"));
         bc.setAttribute("counter", currentCounter-1);

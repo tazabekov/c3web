@@ -7,8 +7,18 @@
     <script type="text/javascript" src="node_modules/@webcomponents/webcomponentsjs/webcomponents-lite.js"></script>
 </head>
 <body>
-    <c3-demo-app></c3-demo-app>
+    <c3-demo-app>
+        <c3-sidebar></c3-sidebar>
 
-    <script type="module" src="app/index.js"></script>
+        <counter-toggler>
+            <binary-counter counter="2"></binary-counter>
+        </counter-toggler>
+        more binary togglers:
+        <counter-toggler>
+            <binary-counter counter="2"></binary-counter>
+        </counter-toggler>
+    </c3-demo-app>
+
+    <script type="module" src="app/c3-demo-app.js"></script>
 </body>
 </html>
